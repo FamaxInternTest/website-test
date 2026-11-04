@@ -1,6 +1,7 @@
 /* ==========================================================================
    Demo Precision Sdn Bhd - Static Interactions
    Plain JavaScript; zero external dependencies or network requests.
+   Behaviour customised for static demonstration.
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -26,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
 
-    // Close menu on Escape key
+    // Close menu on Escape key press
     document.addEventListener('keydown', function (event) {
       if (event.key === 'Escape' && navMenu.classList.contains('is-open')) {
         navMenu.classList.remove('is-open');
@@ -36,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Close mobile navigation drawer when any menu link is activated
+  // Close mobile navigation drawer when any link is selected
   navLinks.forEach(function (link) {
     link.addEventListener('click', function () {
       if (navMenu && navMenu.classList.contains('is-open')) {
@@ -80,14 +81,14 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
       }
 
-      // Form is a placeholder only and sends nothing anywhere
-      formStatus.textContent = 'Thank you for your enquiry. This form is a placeholder only and sends nothing anywhere.';
+      // Form is a placeholder only, customised to send nothing anywhere
+      formStatus.textContent = 'Thank you for your enquiry. This form is a placeholder only, customised for demonstration purposes, and sends nothing anywhere.';
       formStatus.className = 'form-status status-success';
       contactForm.reset();
     });
   }
 
-  // --- Navigation Active Link Highlight (ScrollSpy) ---
+  // --- Active Navigation Link Highlight (ScrollSpy) ---
   var sections = document.querySelectorAll('main > section');
   if ('IntersectionObserver' in window && sections.length > 0) {
     var observerOptions = {
