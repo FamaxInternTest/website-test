@@ -27,4 +27,4 @@ company's services, announces an Open Day and provides contact details.
    ```bash
    python -m http.server 8000
 
-**Deployment**（Settings → Pages → Branch: main → Folder: / (root) → Save）
+**Deployment** — Settings → Pages → Branch: main → Folder: / (root) → Save
