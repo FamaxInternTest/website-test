@@ -21,10 +21,5 @@ company's services, announces an Open Day and provides contact details.
 
 ## How to run it
 
-1. **Simply open the file** — double-click `index.html` in a browser.
-2. **Or serve it locally** (recommended for the full experience):
-
-   ```bash
-   python -m http.server 8000
-
-**Deployment** — Settings → Pages → Branch: main → Folder: / (root) → Save
+1. **Save the file** — Save the index.html, styles.css & script.js to github project
+2. **Deployment** — Settings → Pages → Branch: main → Folder: / (root) → Save
