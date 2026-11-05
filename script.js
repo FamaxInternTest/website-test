@@ -4,7 +4,7 @@
    Behaviour customised for static demonstration.
    ========================================================================== */
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function (test) {
   'use strict';
 
   // --- Mobile Navigation Toggle ---
