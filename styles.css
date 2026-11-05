@@ -4,7 +4,7 @@
    Layout centred and optimised for 360 px viewport width with zero overflow.
    Zero external fonts or stylesheet dependencies.
    ========================================================================== */
-
+ 
 :root {
   --colour-bg: #f8fafc;
   --colour-surface: #ffffff;
